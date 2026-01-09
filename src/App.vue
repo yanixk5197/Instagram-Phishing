@@ -1,30 +1,59 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="main">
+    <h1>Login</h1>
+    <input v-model="password" type="password" placeholder="Passwort" />
+    <button @click="sendPassword">Absenden</button>
+  </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      password: ''
+    }
+  },
+  methods: {
+    async sendPassword() {
+      if (!this.password) return
+
+      try {
+        await fetch('http://192.168.1.110:1312/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password: this.password })
+        })
+
+        this.password = ''
+      } catch (err) {
+        console.error('Fehler beim Senden', err)
+      }
+    }
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.main {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 10px;
 }
-
-nav {
-  padding: 30px;
+input, button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
 }
-
-nav a {
+button {
+  cursor: pointer;
+  background-color: white;
+  color: black;
   font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>

