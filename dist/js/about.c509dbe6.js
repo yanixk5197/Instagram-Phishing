@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkinsagramphishing"]=self["webpackChunkinsagramphishing"]||[]).push([[594],{603:function(n,a,s){s.r(a),s.d(a,{default:function(){return h}});var u=s(6768);const i={class:"about"};function r(n,a){return(0,u.uX)(),(0,u.CE)("div",i,[...a[0]||(a[0]=[(0,u.Lk)("h1",null,"This is an about page",-1)])])}var t=s(1241);const e={},c=(0,t.A)(e,[["render",r]]);var h=c}}]);
+//# sourceMappingURL=about.c509dbe6.js.map
